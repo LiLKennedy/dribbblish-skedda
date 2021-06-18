@@ -29,9 +29,11 @@ function waitForElement(els, func, timeout = 100) {
     const queries = els.map(el => document.querySelector(el));
     if (queries.every(a => a)) {
         func(queries);
+        
     } else if (timeout > 0) {
         setTimeout(waitForElement, 300, els, func, --timeout);
     }
+    
 }
 
 waitForElement([".main-rootlist-rootlistPlaylistsScrollNode ul"], ([query]) => {
@@ -62,7 +64,7 @@ waitForElement([".main-rootlist-rootlistPlaylistsScrollNode ul"], ([query]) => {
                 }
                 continue;
             }
-
+            
             Spicetify.CosmosAsync.get(
                 `sp://core-playlist/v1/playlist/${uri.toURI()}/metadata`,
                 { policy: { picture: true } }
@@ -396,3 +398,8 @@ waitForElement([".Root__main-view .os-resize-observer-host"], ([resizeHost]) => 
         "edit",
     ).register();
 })();
+
+waitForElement([".player-controls__right"], ([lols]) => {
+    const x = document.querySelector('.main-shuffleButton-button');
+    lols.appendChild(x);
+});

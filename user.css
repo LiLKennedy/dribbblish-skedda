@@ -848,9 +848,8 @@ html.right-expanded-cover.buddyfeed-visible .main-coverSlotExpanded-container {
 /* Playlists */
 .GlueDropTarget--playlists img[src=""] {
     border-radius: 0 !important;
-    filter: invert(47%) sepia(48%) saturate(6186%) 
-            hue-rotate(264deg) brightness(89%) contrast(91%);
-    content: url("%userprofile%/.spicetify/Themes/Dribbblish/assets/img/folder.png");
+    filter: invert(18%) sepia(88%) saturate(6463%) hue-rotate(327deg) brightness(114%) contrast(110%);
+    content: url("https://raw.githubusercontent.com/LiLKennedy/spotify-theme-neon/main/assets/img/folder.png");
 }
 
 #dribs-playlist-list {
@@ -890,6 +889,22 @@ html.right-expanded-cover.buddyfeed-visible .main-coverSlotExpanded-container {
 /* Sidebar End */
 
 /* Playlist */
+@keyframes glow {
+    from {
+      box-shadow: 0px 0px 20px -10px var(--spice-button);
+    }
+    to {
+      box-shadow: 0px 0px 40px -10px var(--spice-button);
+    }
+}
+img.main-image-image.main-entityHeader-image.main-entityHeader-shadow {
+    animation: glow 2s infinite alternate;
+}
+.contentSpacing.main-entityHeader-container.main-entityHeader-nonWrapped {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .main-trackList-trackListHeaderRow .main-trackList-sortable {
     color: var(--spice-button) !important;
     transition: color .3s;
@@ -903,8 +918,8 @@ html.right-expanded-cover.buddyfeed-visible .main-coverSlotExpanded-container {
 
 /* Song */
 .main-trackList-playingIcon {
-    filter: brightness(0) saturate(100%) invert(21%) sepia(93%) saturate(7024%) 
-            hue-rotate(323deg) brightness(100%) contrast(107%);
+    filter: brightness(0) saturate(100%)
+            invert(18%) sepia(88%) saturate(6463%) hue-rotate(327deg) brightness(114%) contrast(110%);
 }
 
 .main-trackList-trackListRow {
