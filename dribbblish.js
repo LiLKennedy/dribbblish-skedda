@@ -399,7 +399,7 @@ waitForElement([".Root__main-view .os-resize-observer-host"], ([resizeHost]) => 
     ).register();
 })();
 
-waitForElement([".player-controls__right"], ([lols]) => {
-    const x = document.querySelector('.main-shuffleButton-button');
-    lols.appendChild(x);
+waitForElement([".player-controls__right"], ([controls]) => {
+    const shufflebutton = document.querySelector('.main-shuffleButton-button');
+    controls.appendChild(shufflebutton);
 });
