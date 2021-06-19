@@ -793,6 +793,11 @@ html.right-expanded-cover.buddyfeed-visible .main-coverSlotExpanded-container {
                                                                 
 */
 
+.main-trackList-playingIcon,
+.GlueDropTarget--playlists img[src=""] {
+    filter: brightness(0) saturate(100%)
+}
+
 /* ============================================================================= */
 /* =================================== Lists =================================== */
 /* ============================================================================= */
@@ -926,7 +931,6 @@ div.GlueDropTarget.personal-library >*.active,
 /* Playlists */
 .GlueDropTarget--playlists img[src=""] {
     border-radius: 0 !important;
-    filter: invert(18%) sepia(88%) saturate(6463%) hue-rotate(327deg) brightness(114%) contrast(110%);
     content: url("https://raw.githubusercontent.com/LiLKennedy/spotify-theme-neon/main/assets/img/folder.png");
 }
 
@@ -1016,11 +1020,6 @@ input.x-filterBox-filterInput::placeholder {
 }
 
 /* Song */
-.main-trackList-playingIcon {
-    filter: brightness(0) saturate(100%)
-            invert(18%) sepia(88%) saturate(6463%) hue-rotate(327deg) brightness(114%) contrast(110%);
-}
-
 .main-trackList-trackListRow {
     margin-bottom: 3px;
     transition: all .3s;
