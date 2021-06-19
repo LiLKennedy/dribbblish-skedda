@@ -8,37 +8,9 @@
     --os-windows-icon-dodge: 0;
 }
 
-@font-face {
-    font-family: "Google Sans Display";
-    src: url("https://local_resource_host/fonts/GoogleSansDisplayRegular.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Google Sans Display";
-    src: url("https://local_resource_host/fonts/GoogleSansDisplayMedium.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url("https://local_resource_host/fonts/Roboto.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url("https://local_resource_host/fonts/RobotoMedium.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 500;
-}
-
 body {
-    --glue-font-family: "Google Sans Display","Roboto",spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
-    --info-font-family: "Roboto",spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+    --glue-font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+    --info-font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
     font-family: var(--glue-font-family);
     letter-spacing: normal;
 }
@@ -1336,7 +1308,6 @@ img.main-image-image.main-cardImage-image {
 .main-duration-container {
     color: var(--spice-text);
 }
-
 /* ============================================================================================= */
 /* =============================== Spotify Created Playlists End =============================== */
 /* ============================================================================================= */
