@@ -796,6 +796,7 @@ html.right-expanded-cover.buddyfeed-visible .main-coverSlotExpanded-container {
 .main-trackList-playingIcon,
 .GlueDropTarget--playlists img[src=""] {
     filter: brightness(0) saturate(100%)
+    invert(97%) sepia(52%) saturate(158%) hue-rotate(227deg) brightness(115%) contrast(100%);
 }
 
 /* ============================================================================= */
@@ -1061,6 +1062,18 @@ input.x-filterBox-filterInput::placeholder {
 }
 
 /* Edit Playlist */
+.main-playlistEditDetailsModal-imageDropDownButton {
+    background-color: rgba(var(--spice-rgb-button),.1);
+    color: var(--spice-button);
+    transition: background-color .2s;
+    cursor:pointer;
+}
+
+.main-playlistEditDetailsModal-imageDropDownButton:hover {
+    background-color: rgba(var(--spice-rgb-button),.3) !important;
+    color: var(--spice-button) !important;
+}
+
 .main-editImageButton-image,
 .main-editImageButton-overlay {
     transition: all .3s;
@@ -1180,8 +1193,10 @@ input.x-filterBox-filterInput::placeholder {
     font-weight: normal  !important;
 }
 
-.view-homeShortcutsGrid-shortcut .view-homeShortcutsGrid-imageWrapper {
-    box-shadow: none  !important;
+.view-homeShortcutsGrid-shortcut .view-homeShortcutsGrid-imageWrapper,
+.view-homeShortcutsGrid-PlayButtonContainer,
+.main-playlistEditDetailsModal-imageDropDownButton {
+    box-shadow: 0px 5px 10px -5px var(--spice-main) !important;
 }
 
 .view-homeShortcutsGrid-shortcut:hover .view-homeShortcutsGrid-name {
@@ -1191,7 +1206,6 @@ input.x-filterBox-filterInput::placeholder {
 .view-homeShortcutsGrid-shortcut:hover {
     background: rgba(var(--spice-rgb-button),.1) !important;
 }
-
 
 /* Cards */
 .main-card-card,
@@ -1309,6 +1323,12 @@ img.main-image-image.main-cardImage-image {
 .main-entityHeader-title h1,
 .main-entityHeader-creatorWrapper a {
     color: var(--spice-button);
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.main-entityHeader-creatorWrapper a:hover {
+    color: var(--spice-text);
 }
 
 .main-entityTitle-subtitle.main-entityTitle-gray,
